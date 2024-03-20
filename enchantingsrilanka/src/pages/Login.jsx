@@ -35,14 +35,7 @@ const Login = () => {
                         
                         <div className="input-bottom-div">
                             <input type="submit" value="Login" className='submit-btn' />
-                            <button className='btn-google-hero'>
-                                <div className='btn-google'>
-                                    <div className='image-google'></div>
-                                    <div className='text-google'>
-                                            <span>Sign up with google</span>
-                                    </div>
-                                </div>
-                            </button>
+                           
                         </div>
                         
                     </form>
