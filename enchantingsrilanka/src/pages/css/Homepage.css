@@ -1,0 +1,115 @@
+/* Add this CSS to your global stylesheet or component-specific stylesheet */
+.header-container {
+    background-color: rgba(232, 232, 164, 0.964);
+    padding: 10px; /* Add padding for better appearance */
+
+}
+
+
+/* src/components/Homepage.css */
+/* src/components/Homepage.css */
+/* src/components/Homepage.css */
+/* src/components/Homepage.css */
+.sub-topic {
+    display: flex;
+    align-items: left;
+    margin-bottom: 20px; /* Add margin to separate sub-topics */
+   
+}
+
+.sub-topic .green-square {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(67, 217, 67);
+    margin-right: 10px; /* Add space between square and content */
+}
+
+.sub-topic div {
+    display:inline;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+.sub-topic h4,
+.sub-topic p {
+    margin: 10; /* Add margin to separate text from square */
+    margin-bottom: 60px;
+    margin-top: auto;
+}
+/* src/components/Homepage.css */
+/* src/components/Homepage.css */
+.sub-topic {
+    display:flex;
+}
+/* src/components/Homepage.css */
+
+/* Flex container for icon descriptions */
+/* src/components/Homepage.css */
+
+/* Flex container for icon descriptions */
+.icon-descriptions-container {
+    display: flex;
+    display: inline;
+}
+
+/* Style for individual icon descriptions */
+.icon-description {
+    display: flex;
+    
+    
+    margin-right: 20px;
+    float: left; /* Add margin between icon descriptions */
+}
+
+/* Apply margin to the last icon description to prevent spacing after the last icon */
+.icon-description:last-child {
+    margin-right: 0;
+}
+/* src/components/Homepage.css */
+
+/* Style for green circle */
+.green-circle {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    background-color: rgb(67, 217, 67);
+    border-radius: 50%; /* This makes the div circular */
+}
+
+header{
+    background-color: lightgoldenrodyellow;
+    text-align:center;
+
+    padding: 10px; 
+    margin-top: 50px; /* Adjust top margin */
+    margin-bottom: 50px; 
+    
+    
+}
+
+.sub-topic{
+background-color: lightgrey;
+}
+
+.App-footer {
+    background-color: #dddd86; /* Dark background */
+    color: white; /* White text color */
+    text-align: left; /* Left-align text */
+    padding: 20px; /* Some padding */
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .App-footer a {
+    color: rgb(17, 2, 6); /* White link color */
+    margin: 0 35px; /* Spacing between links */
+    text-decoration: none; /* No underline on links */
+    
+  }
+  
+  
+  .App-footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
