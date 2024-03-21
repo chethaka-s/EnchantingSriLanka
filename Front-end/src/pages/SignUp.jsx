@@ -36,7 +36,7 @@ return (
 
                 <div className="side-inputdiv">
                     <div className="labal-con">
-                        <label htmlFor="">County</label>
+                        <label htmlFor="">Country</label>
                         <select name=""  className ="username3">
                             <option value="">Select</option>
                             <option value="">Sri lanka</option>
