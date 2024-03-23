@@ -1,8 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+     font-family: "Poppins", sans-serif;
+}
 /* Add this CSS to your global stylesheet or component-specific stylesheet */
 .header-container {
     background-color: rgba(232, 232, 164, 0.964);
     padding: 10px; /* Add padding for better appearance */
+    height: 200px;
 
+}
+.header-main-topic{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 
@@ -14,51 +25,56 @@
     display: flex;
     align-items: left;
     margin-bottom: 20px; /* Add margin to separate sub-topics */
+    margin-bottom: 0;
    
 }
+.header-subtopic{
+    font-size: 18px;
+    margin-top: 0;
+}
 
-.sub-topic .green-square {
-    width: 200px;
-    height: 200px;
+.green-square {
+    min-width: 200px;
+    min-height: 200px;
     background-color: rgb(67, 217, 67);
-    margin-right: 10px; /* Add space between square and content */
+    margin-right: 10px; 
+}
+.green-square {
+    min-width: 200px;
+    min-height: 200px;
+    background-color: rgb(67, 217, 67);
+    margin-right: 10px; 
 }
 
-.sub-topic div {
-    display:inline;
-    flex-direction: row;
-    margin-right: 10px;
+
+
+.company-img{
+    height: fit-content;
+    width: auto;
 }
+
 
 .sub-topic h4,
 .sub-topic p {
-    margin: 10; /* Add margin to separate text from square */
-    margin-bottom: 60px;
+    margin: 10; 
+    margin-bottom: 25px;
     margin-top: auto;
 }
-/* src/components/Homepage.css */
-/* src/components/Homepage.css */
+
 .sub-topic {
     display:flex;
 }
-/* src/components/Homepage.css */
 
-/* Flex container for icon descriptions */
-/* src/components/Homepage.css */
-
-/* Flex container for icon descriptions */
 .icon-descriptions-container {
     display: flex;
-    display: inline;
+  
 }
 
 /* Style for individual icon descriptions */
 .icon-description {
     display: flex;
-    
-    
     margin-right: 20px;
-    float: left; /* Add margin between icon descriptions */
+    margin-left: 5px;/* Add margin between icon descriptions */
 }
 
 /* Apply margin to the last icon description to prevent spacing after the last icon */
@@ -82,12 +98,29 @@ header{
     padding: 10px; 
     margin-top: 50px; /* Adjust top margin */
     margin-bottom: 50px; 
+    display: flex;
+   
     
+}
+.comapny-det{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.company-det-name{
+    margin: 0;
+}
+.company-det-desc{
+    margin: 0;
     
 }
 
 .sub-topic{
 background-color: lightgrey;
+display: flex;
+flex-direction: row;
+margin-top: 26px;
+height: auto;
 }
 
 .App-footer {
