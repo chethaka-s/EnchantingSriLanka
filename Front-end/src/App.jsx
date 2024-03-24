@@ -4,13 +4,15 @@ import './App.css';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import Homepage from './pages/Homepage';
+import Index from './pages/index';
 
 
 
 function App() {
   return (
     <div>
-      <SignUp />
+      <Index />
+      {/* <SignUp /> */}
        {/* <Login />  */}
       {/* <Homepage /> */}
       
