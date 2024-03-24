@@ -1,0 +1,142 @@
+
+.headline{
+    background-image: url("../../images/cimage1.png");
+    background-position-x: 15px;
+    background-position-y: 0px;
+    height: 440px;
+    max-width: 100%;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right:0px;
+}
+
+.cimg2{
+    float: right;
+    overflow: auto;
+    width: 434px;
+    
+}
+
+.heading{
+    color:white;
+    margin:auto;
+    font-size: 24px;
+    padding-top: 110px;
+    padding-left: 70px;
+    text-decoration: underline;
+
+}
+
+#button01{
+    margin-top: 30px;
+    width: 300px;
+    height: 55px;
+    margin-left: 70px;
+    border-radius :15px;
+    border-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    background-color: #ED4264;
+    color: white;
+}
+
+
+.topic {
+    background: white;
+    text-align: center; 
+    margin: 0.5rem 0;
+    font-size: 35px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;  
+    font-size: .8em;
+    justify-content: space-around;
+}
+
+.column1{
+    position:;
+    float: left;
+    width: 32%;
+    padding:10px;
+}
+.column2{
+    display: flex;
+    flex-direction: row;  
+    font-size: .8em;
+    justify-content: space-around;
+}
+.img{
+    width: 100%;
+    height: fit-content;
+}
+
+#adimg{
+    width: fit-content;
+    height: fit-content;
+}
+.card {
+    width:400px ;
+    height: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    margin: 0 10px;
+    
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.button02 {
+    background-color: #ED4264;
+    color:white;
+    width: 200px;
+    height: 35px;
+    margin-top: 70px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-color: #f1f1f1;
+    border-style: none;
+
+}
+
+.button03 {
+    background-color: #EDBD42;
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    height: 35px;
+    margin-bottom: 15px;
+    border-color: #f1f1f1;
+    border-style: none;
+    
+
+}
+
+.para{
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 17px;
+}
+footer {
+    background: #EDBD42;
+    width: 100%;
+    height: 3em;
+    color: #fff;
+    box-shadow: 0 -2px 5px #888;
+    
+    font-size: 1em;
+    line-height: 3em;
+    
+    display: flex;
+    flex-direction: row;  
+    font-size: .8em;
+    justify-content: space-around;
+}

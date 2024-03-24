@@ -4,7 +4,7 @@ import './css/Homepage.css'; // Import the CSS file
 import { FaMapMarkerAlt, FaGlobe, FaPhone } from 'react-icons/fa'; // Import icons from React Icons
 
 function Homepage() {
-  return (
+    return (
     <div>
             {/* Logo and content */}
             <div className ='header-container'>
