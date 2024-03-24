@@ -1,17 +1,23 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+// import { Routes, Route } from 'react-router-dom';
+// import { BrowserRouter ,Routes ,Route } from 'react-router-dom';
 import './App.css';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import Homepage from './pages/Homepage';
+import Roads from './pages/RoutePlanner';
+// import Routing from './pages/routing';
 
 
 
 function App() {
   return (
     <div>
-      <SignUp />
-       {/* <Login />  */}
+      {/* <Roads /> */}
+      {/* <Routing/> */}
+
+      {/* <SignUp /> */}
+       <Login /> 
       {/* <Homepage /> */}
       
     </div>

@@ -1,7 +1,49 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './css/signUP.css'
+import axios from 'axios';
 
-const SignUp = () => {
+
+function Signup() {
+      const [username, setUsername] = useState('');
+      const [firstName, setFirstName] = useState('');
+      const [lastName, setLastName] = useState('');
+      const [country, setCountry] = useState('');
+      const [contactNumber ,setContactNumber] =useState('');
+      const [dateOfBirth,setDateOfBirth] =useState('');  
+      const [email, setEmail] = useState('');
+      const [password, setPassword] = useState('');
+      const [signupMessage, setSignupMessage] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post('http://localhost:8080/signup', {
+        username,
+        firstName,
+        lastName,
+        country,
+        contactNumber,
+        dateOfBirth,
+        email,
+        password,
+      });
+
+      setSignupMessage(response.data.message); // Handle response message from API
+      setUsername('');
+      setFirstName('');
+      setLastName('');
+      setCountry('');
+      setContactNumber('');
+      setDateOfBirth
+      setEmail('');
+      setPassword('');
+    } catch (error) {
+      console.error(error);
+      setSignupMessage('Signup failed. Please try again.');
+    }
+  };
+
 return (
     <div className='container'>
     <div className='left-container'>
@@ -21,15 +63,18 @@ return (
                 <h1 className='textlogin-'>SIGN UP</h1>
             </center>
         <div className="s-container">
-            <form action="">
+            <form onSubmit={handleSubmit}>
                 <div className="inputdiv">
-                    <input type="text" placeholder='First Name' name="username" className ="username" />
+                    <input type="text" placeholder='Username' className ="username" value={username} onChange={(e) => setUsername(e.target.value)}/>
                 </div>
                 <div className="inputdiv">
-                    <input type="text" placeholder='Last Name' name="username" className ="username" />
+                    <input type="text" placeholder='First Name'   className ="username" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
                 </div>
                 <div className="inputdiv">
-                    <input type="text" placeholder='Email' name="username" className ="username" />
+                    <input type="text" placeholder='Last Name' name="username" className ="username" value={lastName} onChange={(e) => setLastName(e.target.value)} />
+                </div>
+                <div className="inputdiv">
+                    <input type="text" placeholder='Email' name="username" className ="username" value={email} onChange={(e) => setEmail(e.target.value)}/>
                 </div>
 
 
@@ -37,7 +82,7 @@ return (
                 <div className="side-inputdiv">
                     <div className="labal-con">
                         <label htmlFor="">Country</label>
-                        <select name=""  className ="username3">                                     
+                        <select name=""  className ="username3" value={country} onChange={(e) => setCountry(e.target.value)}>                                     
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Åland Islands">Åland Islands</option>
                 <option value="Albania">Albania</option>
@@ -290,7 +335,7 @@ return (
                     <div className="labal-con">
                         <div className="labal-con">
                             <label htmlFor="">Contact No</label>
-                            <input type="text" placeholder='' name="username" className ="username2" />
+                            <input type="text" placeholder='' name="username" className ="username2" value={contactNumber} onChange={(e) => setContactNumber(e.target.value)} />
                         </div>
                     </div>
 
@@ -299,7 +344,7 @@ return (
 
                     <div className="labal-con">
                         <label htmlFor="">Date Of Birth</label>
-                        <input type="date" placeholder='' name="username" className ="username2" />
+                        <input type="date" placeholder='' name="username" className ="username2" value={dateOfBirth} onChange={(e) => setDateOfBirth(e.target.value)} />
                     </div>
                     <div className="labal-con">
                         {/* <label htmlFor="">Gender</label>
@@ -315,7 +360,7 @@ return (
                 <div className="side-inputdiv">
                     <div className="labal-con">
                         <label htmlFor="">Password</label>
-                        <input type="password" placeholder='Password' name="username" className ="username2" />
+                        <input type="password" placeholder='Password' name="username" className ="username2" value={password} onChange={(e) => setPassword(e.target.value)} />
                         
                     </div>
 
@@ -325,11 +370,12 @@ return (
                     </div>
                 
                 </div>
-
+                        
+      <p>{signupMessage}</p>
 
                 
                 <div className="input-bottom-div2">
-                    <input type="submit" value="SIGN UP" className='submit-btn' />
+                    <input type="submit"  className='submit-btn' />
                     
                 </div>
                 
@@ -338,6 +384,6 @@ return (
     </div>
 </div>
 )
-}
+                    }
 
-export default SignUp
+export default Signup
