@@ -24,7 +24,7 @@ const center = { lat: 6.9271, lng: 79.8612 }
 function RoutePlanner() {
   const { isLoaded } = useJsApiLoader({
     // googleMapsApiKey: import.meta.env.MY_API_KEY,
-    googleMapsApiKey: "AIzaSyBsVZ-ttXw-FWXh77l1AR0tx8yKi3ze9gY",
+    googleMapsApiKey: "",
     libraries: ['places'],
   })
 
