@@ -1,9 +1,13 @@
 import React, { useState } from 'react'
 import './css/signUP.css'
 import axios from 'axios';
+import { useNavigate, useNavigation } from 'react-router-dom';
 
 
 function Signup() {
+
+      const navigate = useNavigate();
+
       const [username, setUsername] = useState('');
       const [firstName, setFirstName] = useState('');
       const [lastName, setLastName] = useState('');
@@ -18,7 +22,7 @@ function Signup() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:8080/signup', {
+      const response = await axios.post('http://localhost:8080/api/auth/signup', {
         username,
         firstName,
         lastName,
@@ -27,7 +31,7 @@ function Signup() {
         dateOfBirth,
         email,
         password,
-      });
+      })
 
       setSignupMessage(response.data.message); // Handle response message from API
       setUsername('');
@@ -38,14 +42,19 @@ function Signup() {
       setDateOfBirth
       setEmail('');
       setPassword('');
+
+       navigate('/login')
     } catch (error) {
       console.error(error);
       setSignupMessage('Signup failed. Please try again.');
     }
   };
 
+
+
 return (
     <div className='container'>
+        <button onClick={() => navigate('/login')}>Click to Navigate</button>
     <div className='left-container'>
         <div className="top-l-container">
     

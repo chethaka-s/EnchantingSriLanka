@@ -8,11 +8,14 @@ import {
   Marker,
   Autocomplete,
   DirectionsRenderer,
+  useLoadScript,
 } from '@react-google-maps/api'
 import { useRef, useState, useEffect } from 'react'
 
 const center = { lat: 6.9271, lng: 79.8612 }
-const apiKey = "AIzaSyBsVZ-ttXw-FWXh77l1AR0tx8yKi3ze9gY";
+
+
+// const apiKey = import.meta.env.MY_API_KEY;
 // const area = "Colombo, Sri Lanka"
  
 
@@ -20,7 +23,8 @@ const apiKey = "AIzaSyBsVZ-ttXw-FWXh77l1AR0tx8yKi3ze9gY";
 
 function RoutePlanner() {
   const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: apiKey,
+    // googleMapsApiKey: import.meta.env.MY_API_KEY,
+    googleMapsApiKey: "AIzaSyBsVZ-ttXw-FWXh77l1AR0tx8yKi3ze9gY",
     libraries: ['places'],
   })
 

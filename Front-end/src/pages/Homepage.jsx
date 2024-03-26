@@ -3,11 +3,16 @@ import React from 'react';
 import './css/Homepage.css'; // Import the CSS file
 import { FaMapMarkerAlt, FaGlobe, FaPhone } from 'react-icons/fa'; // Import icons from React Icons
 
+
 function Homepage() {
-  return (
+
+   
+    
+    return (
     <div>
             {/* Logo and content */}
             <div className ='header-container'>
+          
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                     {/* Logo */}
                     <img src="src\images\logoImage.png" alt="Logo" style={{ width: '220px', height: '220px', marginRight: '10px',color: 'darkpink'}} />
